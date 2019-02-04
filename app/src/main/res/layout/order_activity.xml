@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dcdcdc"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/customer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded"
+            android:padding="8dp"
+            android:text="고객 조회"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="20dp"
+                android:text="    이   름    "
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView1"
+                android:hint="홍길동"
+                android:inputType="textPersonName"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="20dp"
+                android:text="전 화 번 호"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView2"
+                android:hint="010-1234-5678"
+                android:inputType="phone"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="20dp"
+                android:text="    주   소    "
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView3"
+                android:hint="경기도 남양주시 와부읍 도곡리 해태아파트 103-1301호"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLength="3"
+                android:minLines="2"
+                android:scrollbars="vertical"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="주문 목록"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/orderlist_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/rounded"
+            android:text=" 취 소 "
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/rounded"
+            android:text=" 저 장 "
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

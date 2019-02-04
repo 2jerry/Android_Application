@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8c8c8">
+
+
+    <Button
+        android:id="@+id/orderBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/customerBtn"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded"
+        android:text="주문 등록"
+        android:textSize="20dp"
+        android:padding="15dp"/>
+
+    <Button
+        android:id="@+id/customerBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded"
+        android:text="고객 조회"
+        android:textSize="20dp"
+        android:padding="15dp"
+        />
+
+    <Button
+        android:id="@+id/manageBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/customerBtn"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded"
+        android:text="물품 관리"
+        android:textSize="20dp"
+        android:padding="15dp"/>
+
+
+</RelativeLayout>
